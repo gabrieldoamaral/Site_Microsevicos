@@ -22,10 +22,13 @@
     justify-content: space-between;
     width: 100vp;
     padding: 1rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
     background-color: rgb(238, 238, 238);
 }
 
 .titulo-site h1 {
+    font-size: 1.5rem;
     text-transform: uppercase;
     font: 600 1.5rem var(--font-secondary);
     color: indigo;
@@ -35,7 +38,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    padding-right: .5rem;
+}
+
+.separador hr {
+    border: 0;
+    border-top: .5rem solid rgb(255, 157, 0);
 }
 
 .conteudo-busca {
@@ -71,7 +79,8 @@
 .container-servicos {
     width: 100%vp;
     background-color: rgb(204, 204, 204);
-    padding: .5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -92,12 +101,58 @@
 }
 
 .servico {
+    width: 100%;
+    height: 10rem;
     background-color: rgb(185, 185, 185);
     margin: .5rem;
     padding: .8rem;
     border-radius: 10px;
     box-shadow: .1rem .1rem 5px rgba(42, 42, 42, 0.308);
 }
+
+@media (max-width: 850px) {
+
+    .titulo-site h1 {
+        text-transform: uppercase;
+        font: 600 1.2rem var(--font-secondary);
+        color: indigo;
+    }
+    
+    .session-title {
+        text-align: center;
+        padding: 1rem;
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+        color: rgb(44, 44, 44);
+    }
+
+    .servicos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .servico {
+        width: 100%;
+        height: 8rem;
+        background-color: rgb(185, 185, 185);
+        margin: .5rem;
+        padding: .8rem;
+        border-radius: 10px;
+        box-shadow: .1rem .1rem 5px rgba(42, 42, 42, 0.308);
+    }
+
+    .session-title-roxo {
+        text-align: center;
+        padding: 1rem;
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+}
+
 
 .servico-header {
     display: flex;
@@ -113,7 +168,7 @@
 
 .servico-header h3 {
     font-family: var(--font-primary);
-    color: rgb(44, 44, 44);
+    color: rgb(36, 0, 68);
     text-transform: capitalize;
     margin-left: .5rem;
 }
@@ -124,6 +179,43 @@
     color: rgb(82, 82, 82);
 }
 
-.container-servicos-curtidos {
+.btn-acessar {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-acessar button {
+    width: 60%;
+    height: 70%;
+    margin-top: 1.5rem;
     background-color: indigo;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font: normal 400 1rem var(--font-primary);
+    cursor: pointer;
+}
+
+@media (max-width: 1054px) {
+    .btn-acessar button {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.container-servicos-roxo {
+    background-color: indigo;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.session-title-roxo {
+    padding: 1rem;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
