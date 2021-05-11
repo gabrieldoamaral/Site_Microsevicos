@@ -67,6 +67,7 @@
 }
 
 .texto-busca {
+    padding-left: .5rem;
     height: 2rem;
     width: 90%;
     border-radius: 5px;
