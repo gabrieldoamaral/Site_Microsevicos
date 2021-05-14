@@ -24,14 +24,14 @@
     padding: 1rem;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
-    background-color: rgb(238, 238, 238);
+    background-color: indigo;
 }
 
 .titulo-site h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font: 600 1.5rem var(--font-secondary);
-    color: indigo;
+    color: rgb(255, 255, 255);
 }
 
 .container-busca {
@@ -53,7 +53,7 @@
 }
 
 .conteudo-busca button {
-    background-color: indigo;
+    background-color: rgb(255, 157, 0);
     color:  rgb(255, 255, 255);
     height: 2rem;
     width: 2rem;
@@ -71,7 +71,7 @@
     height: 2rem;
     width: 90%;
     border-radius: 5px;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(255, 255, 255);
     margin-right: .5rem;
     font: 1rem var(--font-secondary);
     outline: 0;
@@ -79,7 +79,7 @@
 
 .container-servicos {
     width: 100%vp;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
     padding-right: 2rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
@@ -103,12 +103,24 @@
 
 .servico {
     width: 100%;
-    height: 10rem;
-    background-color: rgb(185, 185, 185);
+    height: 8rem;
+    background-color: rgb(216, 216, 216);
     margin: .5rem;
     padding: .8rem;
     border-radius: 10px;
     box-shadow: .1rem .1rem 5px rgba(42, 42, 42, 0.308);
+}
+
+@media (max-width: 1017px) {
+    .servico {
+        width: 100%;
+        height: 10rem;
+        background-color: rgb(216, 216, 216);
+        margin: .5rem;
+        padding: .8rem;
+        border-radius: 10px;
+        box-shadow: .1rem .1rem 5px rgba(42, 42, 42, 0.308);
+    }
 }
 
 @media (max-width: 850px) {
@@ -116,7 +128,7 @@
     .titulo-site h1 {
         text-transform: uppercase;
         font: 600 1.2rem var(--font-secondary);
-        color: indigo;
+        color: rgb(255, 255, 255);
     }
     
     .session-title {
@@ -138,7 +150,7 @@
     .servico {
         width: 100%;
         height: 8rem;
-        background-color: rgb(185, 185, 185);
+        background-color: rgb(216, 216, 216);
         margin: .5rem;
         padding: .8rem;
         border-radius: 10px;
@@ -170,7 +182,7 @@
 .servico-header h3 {
     font-family: var(--font-primary);
     color: rgb(36, 0, 68);
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-left: .5rem;
 }
 

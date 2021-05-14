@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Hind+Siliguri:wght@300;400;700&family=Nunito:wght@200;600&family=Zen+Dots&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: "Rubik";
+    --font-secondary: "Hind Siliguri";
+    --font-action:"Nunito";
+}
+
+.convert-moedas-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ec;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-moedas {
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    margin: 10rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.teste {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teste1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+.teste1 h1 {
+    font: normal 600 3.2rem var(--font-primary);
+    text-align: center;
+    color: indigo;
+    text-transform: uppercase;
+}
+
+.teste2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.teste2 h1 {
+    font: normal 600 3.2rem var(--font-primary);
+    text-align: center;
+    color: indigo;
+}
+
+.in1 {
+    width: 20rem;
+    height: 4rem;
+    background-color: rgb(184, 184, 184);
+    border-radius: 7px;
+    margin-left: 1rem;
+    outline: none;
+}
+
+.btn-convert-moedas {
+    background-color: indigo;
+}
+
+.separator {
+    padding: 2rem;
+}
